@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
-import cal
-import files
+import src.cal as cal
+import src.files as files
 
 def get_decalage(month) :
     if month in [9, 10] :
@@ -71,4 +71,8 @@ def write_in_html(name, first_name, month, grp_english):
                 res += ' 2022'
         else:
             res += line
-    files.write_in_file('res.html', res)
+    my_dir = 'fiches'
+    files.create_dir(my_dir)
+    path = f'{my_dir}/{name}_{first_name}_{grp_english}_{month}.html'
+    files.write_in_file(path, res)
+    return path
