@@ -33,8 +33,8 @@ def get_table_html(month, grp_english):
             html += '<td>P</td>'
         html += '<td></td>'
         html += '<td><br><br><br></td></tr>'
-    #repeat 42 max
-    for i in range(42-len(all_events)):
+    #repeat 37 max
+    for i in range(37-len(all_events)):
         html += '<tr style="border-style:solid;"><td width="40"></td><td width="150"></td>'
         for j in range(4):
             html += '<td></td>'
