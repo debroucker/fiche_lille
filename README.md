@@ -1,4 +1,3 @@
 # fiche_lille
 
-# init
-ics : pip install ics
+url : https://generateur-fiche-alternance.herokuapp.com/generer/NOM/PRENOM/GRP_ANGLAIS/NUM_MOIS
